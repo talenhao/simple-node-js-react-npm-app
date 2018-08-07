@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'su - root -c "npm install"'
+                sh 'set -x ; npm install'
             }
         }
     }
